@@ -434,7 +434,7 @@ $abbr-underline: 1px dotted $black !default;
     cite {
       // Extending a class is not recommended.
       // TODO: Break the typography-base/typography-helpers separation
-      @extend .cite-block;
+      @extend .cite-block !optional;
     }
   }
 
@@ -453,7 +453,7 @@ $abbr-underline: 1px dotted $black !default;
   // Code
   @if ($enable-code-inline == true) {
     code {
-      @extend .code-inline;
+      @extend .code-inline !optional;
     }
   }
 
